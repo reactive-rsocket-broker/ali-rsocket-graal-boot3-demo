@@ -1,4 +1,4 @@
-Alibaba Socket GraalVM native-image with Spring Boot 3 demo
+Alibaba Socket GraalVM native-image with Spring Boot 3
 ===========================================================
 
 Alibaba RSocket GraalVM native-image demo with Spring Boot 3
@@ -11,8 +11,8 @@ Alibaba RSocket GraalVM native-image demo with Spring Boot 3
 
 ```
 $ # switch to GraalVM 22.3.0
-$ mvn -Pnative -DskipTests clean package
-$ ./target/ali-rsocket-graal-demo
+$ mvn -Pnative -DskipTests clean package native:compile
+$ ./target/ali-rsocket-graal-boot3-demo
 $ # open a new tab
 $ curl http://localhost:8183/user/1
 ```
