@@ -41,7 +41,7 @@ $ upx -7 -k target/ali-rsocket-graal-demo
 
 # GraalVM Native Image guide
 
-* If you want to access remote RSocket Service, please add interface full name to `proxy-config.json`, then
+* If you want to access remote RSocket Service, please register interface to `AppRuntimeHintsRegistrar.java`, then
   add `.nativeImage()`  to create service call stub.
 
 ```
